@@ -9,7 +9,7 @@ db.students.insertOne({
 })
 ```
 
-1. 依以下格式一次新增多筆 document 到 `students` collection
+2. 依以下格式一次新增多筆 document 到 `students` collection
 
 ```json
 db.students.insertMany({
@@ -38,22 +38,22 @@ db.students.insertMany({
 })
 ```
 
-3 . 查詢 `students` collection 中的所有資料
+3. 查詢 `students` collection 中的所有資料
 
 ```json
 db.students.find()
 ```
 
-1. 查詢 `students` collection 中符合 group 屬性為 B 的資料 `使用 { <field>: <value> } 設定符合的項目`
+4. 查詢 `students` collection 中符合 group 屬性為 B 的資料 `使用 { <field>: <value> } 設定符合的項目`
 
 ```json
 db.students.find({"group":"B"})
 ```
 
-1. 查詢 students collection 中符合分數在 60 分以上的的資料
+5. 查詢 students collection 中符合分數在 60 分以上的的資料
 
 ```json
 db.students.find({"score":{"$gt":60}})
 ```
 
-1. 查詢 `students` collection 中符合分數在 60 分以下**或是** group 為 B 的資料
+6. 查詢 `students` collection 中符合分數在 60 分以下**或是** group 為 B 的資料
