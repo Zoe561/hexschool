@@ -12,7 +12,7 @@ db.students.insertOne({
 2. 依以下格式一次新增多筆 document 到 `students` collection
 
 ```json
-db.students.insertMany({
+db.students.insertMany([{
   "studentName": "Brennan Miles",
   "group": "C",
   "score": 72,
@@ -35,7 +35,7 @@ db.students.insertMany({
   "group": "B",
   "score": 60,
   "isPaid": false
-})
+}])
 ```
 
 3. 查詢 `students` collection 中的所有資料
